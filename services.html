@@ -4,107 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDISCOM - Services</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="font-sans bg-gray-100">
 
     <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="https://via.placeholder.com/150x40" alt="IDISCOM Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="index.html"><img src="https://via.placeholder.com/150x40" alt="IDISCOM Logo"></a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-400">Accueil</a></li>
+                <li><a href="about.html" class="hover:text-gray-400">À propos</a></li>
+                <li><a href="projects.html" class="hover:text-gray-400">Projets</a></li>
+                <li><a href="blog.html" class="hover:text-gray-400">Blog</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Nos Services</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Stratégie de Communication</h5>
-                            <p class="card-text">Nos experts vous accompagnent dans l'élaboration et la mise en œuvre de stratégies de communication sur mesure pour atteindre vos objectifs commerciaux.</p>
-                        </div>
-                    </div>
+    <section id="services" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Nos Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Stratégie de Communication" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Stratégie de Communication</h3>
+                    <p class="mt-2 text-gray-600">Nos experts vous accompagnent dans l'élaboration et la mise en œuvre de stratégies de communication sur mesure pour atteindre vos objectifs commerciaux.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Création de Campagnes</h5>
-                            <p class="card-text">Nous concevons et déployons des campagnes publicitaires percutantes pour maximiser votre visibilité et votre impact.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Création de Campagnes" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Création de Campagnes</h3>
+                    <p class="mt-2 text-gray-600">Nous concevons et déployons des campagnes publicitaires percutantes pour maximiser votre visibilité et votre impact.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Expériences Cross Canal</h5>
-                            <p class="card-text">Nous intégrons tous vos canaux de communication pour offrir à vos clients une expérience homogène et engageante.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Expériences Cross Canal" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Expériences Cross Canal</h3>
+                    <p class="mt-2 text-gray-600">Nous intégrons tous vos canaux de communication pour offrir à vos clients une expérience homogène et engageante.</p>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Développement de Plateformes Digitales</h5>
-                            <p class="card-text">Nous créons et gérons vos sites web et applications pour assurer une présence digitale optimale.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Développement de Plateformes Digitales" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Développement de Plateformes Digitales</h3>
+                    <p class="mt-2 text-gray-600">Nous créons et gérons vos sites web et applications pour assurer une présence digitale optimale.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Identité de Marque</h5>
-                            <p class="card-text">Nous vous aidons à concevoir une identité de marque forte et cohérente qui résonne avec votre public cible.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Identité de Marque" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Identité de Marque</h3>
+                    <p class="mt-2 text-gray-600">Nous vous aidons à concevoir une identité de marque forte et cohérente qui résonne avec votre public cible.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Service Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Production de Contenu Éditorial</h5>
-                            <p class="card-text">Nous produisons du contenu de haute qualité pour alimenter vos différents supports de communication.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Production de Contenu Éditorial" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Production de Contenu Éditorial</h3>
+                    <p class="mt-2 text-gray-600">Nous produisons du contenu de haute qualité pour alimenter vos différents supports de communication.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center py-3">
-        <div class="container">
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
             <p>&copy; 2024 IDISCOM. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

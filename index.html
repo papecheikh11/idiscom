@@ -4,53 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDISCOM - Accueil</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="font-sans bg-gray-100">
 
     <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="https://via.placeholder.com/150x40" alt="IDISCOM Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary ml-lg-3">Demandez une consultation gratuite</a>
-                </div>
-            </div>
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="index.html"><img src="https://via.placeholder.com/150x40" alt="IDISCOM Logo"></a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-400">Accueil</a></li>
+                <li><a href="about.html" class="hover:text-gray-400">À propos</a></li>
+                <li><a href="services.html" class="hover:text-gray-400">Services</a></li>
+                <li><a href="projects.html" class="hover:text-gray-400">Projets</a></li>
+                <li><a href="blog.html" class="hover:text-gray-400">Blog</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Banner -->
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Votre partenaire dans la transformation numérique</h1>
-            <p class="lead">IDISCOM accompagne les PME et grandes entreprises locales dans leur transformation numérique.</p>
-            <a href="services.html" class="btn btn-primary my-2">Nos Services</a>
-            <a href="contact.html" class="btn btn-secondary my-2">Contactez-nous</a>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1920x1080');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-bold">Votre partenaire dans la transformation numérique</h1>
+            <p class="mt-4 text-lg">IDISCOM accompagne les PME et grandes entreprises locales dans leur transformation numérique.</p>
+            <a href="contact.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded">Demandez une consultation gratuite</a>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section id="services" class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Nos Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Service" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Stratégie de Communication</h3>
+                    <p class="mt-2 text-gray-600">Nos experts vous accompagnent dans l'élaboration et la mise en œuvre de stratégies de communication sur mesure.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Service" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Création de Campagnes</h3>
+                    <p class="mt-2 text-gray-600">Nous concevons et déployons des campagnes publicitaires percutantes pour maximiser votre visibilité.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Service" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Expériences Cross Canal</h3>
+                    <p class="mt-2 text-gray-600">Nous intégrons tous vos canaux de communication pour offrir une expérience homogène et engageante.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/400x300" alt="Service" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold">Développement de Plateformes Digitales</h3>
+                    <p class="mt-2 text-gray-600">Nous créons et gérons vos sites web et applications pour assurer une présence digitale optimale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Prêt à démarrer votre projet?</h2>
+            <p class="mt-4">Contactez-nous dès aujourd'hui pour une consultation gratuite et découvrez comment nous pouvons vous aider.</p>
+            <a href="contact.html" class="mt-6 inline-block bg-white text-blue-600 py-3 px-6 rounded hover:bg-gray-200">Contactez-nous</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center py-3">
-        <div class="container">
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
             <p>&copy; 2024 IDISCOM. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
